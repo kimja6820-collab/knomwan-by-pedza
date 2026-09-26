@@ -1,7 +1,7 @@
 'use client';
 
 import { use, useState, useEffect } from 'react';
-import { supabase } from '@/lib/supabaseClient';
+import { supabase } from '../../../lib/supabaseClient';
 export default function OrderPage({ params }) {
   // ข้อกำหนดสำคัญ: Unwrap params (Promise) ด้วย use() จาก React เสมอ
   const resolvedParams = use(params);
